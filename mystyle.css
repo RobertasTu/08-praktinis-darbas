@@ -2,13 +2,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 18px;
+}
+
 body {
   font-family: 'Mate SC', serif;
   padding: 10px;
-  background: #f1f1f1;
+  background: white;
   max-width: 1920px;
   margin: auto;
-  font-size: 5vw;
+  
 }
 
 /* Header/Blog Title */
@@ -19,7 +23,8 @@ body {
 }
 
 .header h1 {
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: 2.778rem;
 }
 
 /* Style the top navigation bar */
@@ -89,17 +94,31 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
+
+
+html {
+  font-size: 14px;
+}
+
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
+    
+  
   }
+
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
-  .topnav a {
+  html {
+    font-size: 12px;
+  }
+  
+    .topnav a {
     float: none;
     width: 100%;
   }
-}
+  
+  }

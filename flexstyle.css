@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 18px;
+  }
+  
+  body {
+    font-family: 'Mate SC', serif;
+    padding: 10px;
+    background: white;
+    max-width: 1920px;
+    margin: auto;
+    
+  }
+  .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  }
+
+  .flex-item-1 {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+  }
+    
+  /* Header/Blog Title */
+  .flex-item header {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    justify-content: center;
+  }
+  
+  .header h1 {
+    /* font-size: 50px; */
+    font-size: 2.778rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .flex-item-2 {
+      width: 100%;
+  }
+  .flex-item-2 .topnav {
+    width: 100%;
+    /* overflow: hidden; */
+    background-color: #333;
+  }
+  .col-1 {
+      width: 8.33%;
+      float:left;
+  }
+  .col-9 {
+      width: 75%;
+      float:left;
+  }
+
+  .text-right {
+      text-align: right;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: rgb(171, 237, 240);
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .flex-item-4 footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    width: 100%;
+    
+  }
+
+
+
+
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 720px) {
+  
+  
+  html {
+    font-size: 14px;
+  }
+  
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+      
+    
+    }
+  
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    html {
+      font-size: 12px;
+    }
+    
+      .topnav a {
+      float: none;
+      width: 100%;
+    }
+    
+    }
+  
