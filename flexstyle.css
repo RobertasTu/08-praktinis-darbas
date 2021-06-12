@@ -48,6 +48,7 @@
   /* Style the top navigation bar */
   .flex-item-2 {
       width: 100%;
+      background-color: #333;
   }
   .flex-item-2 .topnav {
     width: 100%;
@@ -57,23 +58,31 @@
   .col-1 {
       width: 8.33%;
       float:left;
+     
   }
-  .col-9 {
-      width: 75%;
-      float:left;
-  }
-
-  .text-right {
-      text-align: right;
+  .col-7 {
+      width: 58.33%;
+      float: left;
+ 
   }
   
+  
+  .text-right {
+      text-align: right;
+      margin-right: 50px;
+  }
+  .text-center {
+      text-align: center;
+      margin: auto;
+  }
   /* Style the topnav links */
   .topnav a {
     display: block;
-    color: black;
-    text-align: center;
+    color: silver;
+    /* text-align: center; */
     padding: 14px 16px;
     text-decoration: none;
+    
   }
   
   /* Change color on hover */
@@ -87,21 +96,25 @@
   .leftcolumn {   
     
     width: 75%;
+    float:left;
   }
   
   /* Right column */
   .rightcolumn {
     
     width: 25%;
+    float:left;
     background-color: #f1f1f1;
     padding-left: 20px;
   }
   
   /* Fake image */
-  .fakeimg {
+  .fakeimg-1 {
     background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+    /* width: 100%; */
+    /* padding: 20px; */
+    /* height: 100px; */
+
   }
   
   /* Add a card effect for articles */
@@ -128,6 +141,14 @@
     
   }
 
+  img {
+    /* background-color: #aaa; */
+    width: 25%;
+    padding: 20px;
+    height: 300px;
+    object-fit: cover;
+
+  }
 
 
 
@@ -139,7 +160,10 @@
   html {
     font-size: 14px;
   }
-  
+  .flex-container {
+  flex-direction: column;
+  }
+
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
