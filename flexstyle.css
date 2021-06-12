@@ -154,12 +154,20 @@
   .flex-item-3 .rightcolumn img {
     /* background-color: #aaa; */
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     height: 100px;
     object-fit: cover;
 
   }
-
+ 
+.flex-item-4 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: grey;
+}
 
 
   
