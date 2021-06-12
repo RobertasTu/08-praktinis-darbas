@@ -168,6 +168,15 @@
     width: 100%;
     background-color: grey;
 }
+.flex-item-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
 
 
   
